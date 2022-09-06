@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+/*haut page*/
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+nav h1{
+    color: #b87700;
+    font-family: 'lora', sans-serif;
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #962a00;
+    margin-right: 5px;
+    border-bottom: 1px solid #962a00;
+}
+/*bandeau*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('images/2022-04-11_18.27.59.png');
+    background-size: auto;
+    color: white;
+    padding: 100px;
+}
+header h1{
+    font-size: 50px;
+    font-family: 'Lora', sans-serif;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    font-family: 'Lora', sans-serif;
+}
+header button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    font-size: 20px;
+    font-family: 'Lora', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+/*produit*/
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.main .content .d1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.main .content .d1 .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+}
+.main .content .d1.right{
+    flex: 0 0 70%;
+}
+.main .content .d1 .right img{
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+}
+/*bas de page*/
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: black;
+    color: #fff;
+    padding: 30px 100px;
+}
+footer h1{
+    font-family: 'Lora', sans-serif;
+    border-bottom: 1px solid #fff;
+    width: 15.3%;
+    padding: 3px;
+}
+footer .services{
+    margin-top: -10px;
+    display:flex;
+    flex-wrap:wrap;
+}
+footer .services .service{
+    margin-right: 30px;
+    padding: 10px;
+}
+footer .services .service p{
+    max-width: 300px;
+}
+
+/*tel*/
+@media screen and (max-width:680px){
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .d1{
+        margin: 10px;
+    }
+    .main .content .d1 .right img{
+        height: 200px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .main .content .d1{
+        display: block;
+    }
+    footer {
+        padding: 30px;
+    }
+}
